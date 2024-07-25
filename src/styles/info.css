@@ -1,0 +1,24 @@
+html{
+	height: 100vh;
+}
+h1{
+	text-align: center;
+}
+
+.info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	background-color: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100%;
+	position: relative;
+  bottom: -200px; 
+  transition: bottom 1s ease-in-out; 
+}
+
+.info.animated{
+	bottom: 0;
+}

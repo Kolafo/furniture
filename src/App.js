@@ -1,4 +1,4 @@
-нimport React from 'react';
+import React from 'react';
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header';
@@ -6,17 +6,17 @@ import Contact from './Components/Contact';
 import Cart from './Components/Cart';
 import { CartProvider } from './Components/CartStatus';
 import FurnitureCarousel from './Components/FurnitureCarousel';
-import FurnitureList from './Components/FurnitureList'
-
+import FurnitureList from './Components/FurnitureList';
+import './styles/info.css';
 const App = () => {
-  const [tab, settab] = useState();
+  const [tab, setTab] = useState();
   if (tab === undefined) {
-    settab('products')
+    setTab('products')
   }
   return (
     <CartProvider>
       <Router>
-        <Header settab={settab} />
+        <Header settab={setTab} />
         <Routes>
           <Route path="/" element={<FurnitureCarousel />} />
           <Route path="/products" element={<FurnitureList />} />

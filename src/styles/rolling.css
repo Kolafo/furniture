@@ -1,9 +1,8 @@
-/* styles.css */
 
 /* Общие стили для карусели */
 .carousel-container {
   width: 60%;
-  margin:  0 auto;
+  margin:  -2px auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -11,8 +10,7 @@
 
 /* Стили для карточек мебели */
 .furniture-card {
-
-  padding: 10px;
+  padding: 0px;
   border-radius: 8px;
   text-align: center;
   transition: transform 0.2s;

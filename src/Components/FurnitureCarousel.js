@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Slider from 'react-slick';
+import Info from './Info';
 
 const furnitureData = [
   {
@@ -68,17 +69,20 @@ function FurnitureCarousel() {
   };
   
   return (
-    <div className="carousel-container">
-      <Slider {...settings}>
-        {furnitureData.map(item => (
-          <div className="furniture-card" key={item.id}>
-            <img className="furniture-image" src={item.imageUrl} alt={item.name} />
-            <h3>{item.name}</h3>
-            <p>{item.description}</p>
-            <p>${item.price}</p>
-          </div>
-        ))}
-      </Slider>
+    <div>
+        <div className="carousel-container">
+          <Slider {...settings}>
+            {furnitureData.map(item => (
+              <div className="furniture-card" key={item.id}>
+                <img className="furniture-image" src={item.imageUrl} alt={item.name} />
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+                <p>${item.price}</p>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      <Info />
     </div>
   );
 }
