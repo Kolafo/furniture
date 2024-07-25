@@ -1,24 +1,107 @@
-html{
+html,
+body {
 	height: 100vh;
-}
-h1{
-	text-align: center;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	scrollbar-color: transparent transparent;
 }
 
-.info{
+.title,
+.text {
+	z-index: 1;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+ul {
+	font-size: 20px;
+}
+
+.title {
+	font-size: 2.1rem;
+}
+.info {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin-top: 50px;
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0, 0, 0, 0.4);
 	width: 100%;
-	height: 100%;
+	height: 105vh;
 	position: relative;
-  bottom: -200px; 
-  transition: bottom 1s ease-in-out; 
+	bottom: -400px;
+	transition: bottom 1s ease-in-out;
+	background-image: url('background.jpeg');
+	background-size: cover; /* или 'contain', '100% 100%', etc. */
+	background-repeat: no-repeat;
+	background-position: center;
+	/* background-attachment: sticky; /* Опционально: фиксирует фон */
 }
 
-.info.animated{
+.info::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный цвет */
+}
+
+.info.animated {
 	bottom: 0;
 }
+
+.header {
+	text-align: center;
+	margin:	 0;
+	color: white;
+	z-index: 1;
+}
+
+.header h1 {
+	font-size: 36px;
+	font-weight: bold;
+	color: white;
+	z-index: 1;
+}
+
+.section {
+	margin: 0px 10%;
+	padding: 10px;
+	color: white;
+	z-index: 1;
+}
+
+.section h2 {
+	font-size: 28px;
+	margin-bottom: 5px;
+	color: white;
+	z-index: 1;
+}
+
+.section ul {
+	list-style-type: none;
+	padding: 0;
+	color: white;
+	z-index: 1;
+}
+
+.section ul li {
+	font-size: 18px;
+	line-height: 1.5;
+	color: white;
+	z-index: 1;
+	position: relative;
+	padding-left: 20px;
+}
+
+.section ul li::before {
+	content: '\2714';
+	position: absolute;
+	left: 0;
+	top: 4px;
+}
+

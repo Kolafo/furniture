@@ -1,21 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import furnitureData from './furniture.json';
 
 function FurnitureList() {
     const [furniture, setFurniture] = useState([]);
-
-    useEffect(() => {
-        axios.get('/api/furniture')
-            .then(response => {
-                setFurniture(response.data);
-            })
-            .catch(error => {
-                console.error('There was an error!', error);
-            });
-    }, []);
+    setFurniture(furnitureData);
+    // useEffect(() => {
+    //     axios.get('/api/furniture')
+    //         .then(response => {
+    //             setFurniture(response.data);
+    //         })
+    //         .catch(error => {
+    //             console.error('There was an error!', error);
+    //         });
+    // }, []);
     if (furniture.length === 0) {
         return <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '40px' }}>Loading...</p>;
     }
+    console.log(furniture);
     return (
         <div>
             <h1>Furniture Catalog</h1>

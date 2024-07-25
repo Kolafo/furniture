@@ -8,6 +8,8 @@ import { CartProvider } from './Components/CartStatus';
 import FurnitureCarousel from './Components/FurnitureCarousel';
 import FurnitureList from './Components/FurnitureList';
 import './styles/info.css';
+
+
 const App = () => {
   const [tab, setTab] = useState();
   if (tab === undefined) {
@@ -19,7 +21,7 @@ const App = () => {
         <Header settab={setTab} />
         <Routes>
           <Route path="/" element={<FurnitureCarousel />} />
-          <Route path="/products" element={<FurnitureList />} />
+          <Route path="/FurnitureList" element={<FurnitureList />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
