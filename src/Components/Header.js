@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Cart from './Cart'
 const Header = () => {
 	return (
 		<header className='headers'>
@@ -14,6 +14,7 @@ const Header = () => {
 				<Link to='/Contact' className='nav-link'>
 					Контакты
 				</Link>
+        <Cart />
 			</nav>
 		</header>
 	)

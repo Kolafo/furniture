@@ -1,0 +1,58 @@
+.cart-icon {
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	z-index: 1001; /* Убедитесь, что значок корзины выше header */
+  }
+  
+  .cart-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	z-index: 1000;
+  }
+  
+  .cart-dropdown {
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	width: 300px;
+	max-height: 80vh;
+	overflow-y: auto;
+	margin-top: 60px; /* Высота header + отступ */
+	margin-right: 20px; /* Отступ от края экрана */
+  }
+  
+  .cart-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+  }
+  
+  .close-button {
+	background: none;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  .cart-items {
+	list-style: none;
+	padding: 10px;
+  }
+  
+  .cart-item {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+  }

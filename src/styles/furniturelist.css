@@ -1,0 +1,58 @@
+.furnitureList {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.furnitureCards {
+    flex: 0 0 300px;
+    margin: 10px;
+}
+
+.furnitureImages {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1024px) {
+    .furnitureImages {
+        width: 100%;
+        height: 100%;
+    }
+
+    .furnitureCards {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .furnitureList {
+        flex-direction: column;
+    }
+
+    .furnitureImages {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .furnitureCards {
+        flex: 0 0 100%;
+    }
+
+    .furnitureList {
+        align-items: flex-start;
+    }
+
+    .furnitureImages {
+        height: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .furnitureCards {
+        flex: 0 0 90%;
+    }
+}

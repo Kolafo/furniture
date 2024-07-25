@@ -17,7 +17,29 @@
 	  "id": 3,
 	  "name": "Table",
 	  "description": "Stylish table for your diningitory",
-	  "price": 250,
+	  "price": 3,
+	  "imageUrl": "./table1.jpg"
+	},
+	{
+	  "id": 4,
+	  "name": "Table",
+	  "description": "Stylish table for your diningitory",
+	  "price": 21250,
+	  "imageUrl": "./table1.jpg"
+	},
+	{
+	  "id": 5,
+	  "name": "Table",
+	  "description": "Stylish table for your diningitory",
+	  "price": 251230,
+	  "imageUrl": "./table1.jpg"
+	},
+	{
+	  "id": 6,
+	  "name": "Table",
+	  "description": "Stylish table for your diningitory",
+	  "price": 2321331250,
 	  "imageUrl": "./table1.jpg"
 	}
+	
   ]
